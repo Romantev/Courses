@@ -1,0 +1,55 @@
+h3::first-letter {
+    color: #00796B;
+    font-size: 3em;
+}
+
+h3:hover::first-letter {
+    color: #4FC3F7;
+}
+
+li:nth-child(1)::first-letter {
+    color: #4FC3F7;
+    font-size: 2em;
+    text-decoration: overline;
+}
+
+li:nth-child(2)::first-letter {
+    color: #C51162;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+li:nth-child(3)::first-letter {
+    color: #64DD17;
+    font-size: 2em;
+}
+
+li:nth-child(3) {
+    text-decoration: line-through;
+}
+
+p:nth-child(1) {
+    color: #37474F;
+    text-indent: 50px;
+}
+
+p:nth-child(1)::first-line {
+    font-size: 1.3em;
+}
+
+p:nth-child(1n +2)::first-letter {
+    color: #D50000;
+    font-size: 1.5em;  
+}
+
+p:nth-child(1n +2)::first-line {
+    color: #64DD17;
+}
+
+p:nth-child(1n + 2):hover::first-line {
+    color: #303F9F;
+}
+
+p:nth-child(odd) {
+    font-weight: 600;
+}

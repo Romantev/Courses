@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    background-image: url(./noah-silliman-gzhyKEo_cbU-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+    padding: 1%;
+}
+
+.first {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.first:hover {
+    color: rgb(199, 187, 187);
+    font-size: 1.0rem;
+}
+
+section {
+    background: rgb(171, 171, 171, 0.2);
+    padding: 1%;
+    width: 30rem;
+    border-radius: 10px;
+    display: grid;
+    margin: 10rem auto 90px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10rem;
+    letter-spacing: 10px;
+}
+
+.startseite {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.startseite:hover {
+    color: white;
+    background: rgb(255,255,255,0.3);
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.not-found {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}

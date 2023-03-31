@@ -1,0 +1,33 @@
+:root {
+    --Überschrift: 2.6rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    background-image: url(./hendrik-cornelissen--qrcOR33ErA-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background: rgb(255 255 255 /0.4);
+    width: 90vw;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-left: 5vw;
+    font-size: var(--Überschrift);
+}

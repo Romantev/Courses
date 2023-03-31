@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "raleway";
+    src: url(./Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "raleway";
+}
+
+html {
+    /* font-size: 62.5%; */
+}
+
+header {
+    height: 76px;
+    margin-top: 2px;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+nav a:hover {
+    color: #333;
+}
+
+ul a {
+    color: #333;
+    text-decoration: none;
+    font-size: clamp(0.5rem, 1vw, 0.8rem);
+}
+
+ul a:hover {
+    color: #337ab7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    background: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1  {
+    color: white;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    margin: 24px;
+}
+
+.div-flex {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.div-flex a:nth-of-type(1) {
+    text-decoration: none;
+    color: white;
+    border: 2px solid #5234f9;
+    padding: 13px 26px;
+    background-color: #5234f9;
+    line-height: 24px;
+    min-width: 200px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.div-flex a:nth-of-type(1):hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+    section a:nth-of-type(2) {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 13px 26px;
+    min-width: 200px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.div-flex a:nth-of-type(2):hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.div-section {
+    gap: 5rem;
+}
+
+p {
+    color: white;
+    margin: 24px;
+    font-weight: 400;
+}

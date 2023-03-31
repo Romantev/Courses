@@ -1,0 +1,82 @@
+@font-face {
+    font-family: great;
+    src: url(./FrederickatheGreat-Regular.ttf);
+    font-family: sans;
+    src: url(./OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    font-family: great;
+    box-sizing: content-box;
+    margin: auto 0;
+}
+
+header {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/000/037/943/large/Dark_Jungle_02s.jpg?1400222283");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin: 20px 30px;
+    margin-bottom: 150px;
+}
+
+nav {
+    text-align: center;
+    margin: auto 100px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+main {
+    height: 500px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: auto 100px;
+}
+
+p:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+section div {
+    border: 1px double black;
+    padding-top: 20px;
+    width: 50%;
+    margin-left: 80px;
+    align-items: center;
+}
+
+section p {
+    font-family: sans;
+}
+
+footer {
+    background-color: rgb(62, 61, 61);
+    color: white;
+    padding: 30px 20px ;
+    font-family: sans;
+}
+
+footer p {
+    margin-bottom: 30px;
+}
+
+footer a {
+    border-radius: 0;
+}

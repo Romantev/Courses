@@ -1,0 +1,115 @@
+@font-face {
+    font-family: lato;
+    src: url(./Lato-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+    color: rgba(0,0,0,.8);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+nav {
+    height: 10vh;
+    margin: auto 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.profile {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 0 auto;
+}
+
+main {
+    height: 90vh;
+    background-color: #D9E8E5;
+}
+
+.section-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10rem 15rem;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+h1 {
+    margin-bottom: 4rem;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+section div {
+    height: 500px;
+    width: 800px;
+    position: relative;
+}
+
+.first {
+    background: url(./dan-gold-N7RiDzfF2iw-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.second {
+    background: url(./dhiva-krishna-X16zXcbxU4U-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.third {
+    background: url(./grahame-jenkins-p7tai9P7H-s-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.fourth {
+    background: url(./lance-asper-N9Pf2J656aQ-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.fith {
+    background: url(./oli-woodman-fwYZ3B_QQco-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.sixth {
+    background: url(./tyler-clemmensen-d1Jum1vVLew-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+div p {
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    color: white;
+    font-size: clamp(2rem, 2vw, 2.4rem);
+}

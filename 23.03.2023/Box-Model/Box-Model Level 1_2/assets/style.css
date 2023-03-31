@@ -1,0 +1,13 @@
+p {
+    border: 10px solid black;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}

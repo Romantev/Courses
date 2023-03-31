@@ -1,0 +1,32 @@
+h1 {
+    font-size: 48px;
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 10px 20px 10px;
+}
+
+nav {
+    text-indent: 30%;
+    word-spacing: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    word-spacing: 50px;
+    text-indent: 10%;
+}
+
+h2 {
+    text-shadow: 5px 5px 5px;
+    letter-spacing: 10px;
+}
+
+section {
+    line-height: 20px;
+    background-color: blueviolet;
+}
+
+aside {
+    line-height: 50px;
+    background-color: antiquewhite;
+}

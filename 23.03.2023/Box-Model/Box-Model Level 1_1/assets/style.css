@@ -1,0 +1,8 @@
+p {
+    background-color: lightcoral;
+    width: 200px;
+    padding: 25px;
+    border: 25px solid black;
+    margin: 25px;
+    margin: 25px auto;
+}

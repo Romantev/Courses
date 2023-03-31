@@ -1,0 +1,86 @@
+h1::first-letter {
+    font-size: 3em;
+    color: #00796B;
+}
+
+h1:hover::first-letter {
+    color: #4FC3F7;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+}
+
+li:nth-child(1)::before {
+    content: url(./check.png);
+}
+
+li:nth-child(1)::after {
+    content: url(./dance.png);
+}
+
+li:nth-child(2)::before {
+    content: url(./check.png);
+}
+
+li:nth-child(2)::after {
+    content: url(./book.png);
+}
+
+li:nth-child(3)::before {
+    content: url(./doing.png);
+}
+
+li:nth-child(3)::after {
+    content: url(./eat.png);
+}
+
+li:nth-child(4)::before {
+    content: url(./doing.png);
+}
+
+li:nth-child(4)::after {
+    content: url(./organize.png);
+}
+
+li:nth-child(5)::before {
+    content: url(./no.png);
+}
+
+li:nth-child(5)::after {
+    content: url(./gym.png);
+}
+
+li:nth-child(6)::before {
+    content: url(./no.png);
+}
+
+li:nth-child(6)::after {
+    content: url(./bill.png);
+}
+
+li:nth-child(1) {
+    text-decoration: line-through;
+}
+
+li:nth-child(2) {
+    text-decoration: line-through;
+}
+
+li:nth-child(3) {
+    background-color: #00796B;
+}
+
+li:nth-child(4) {
+    background-color: #00796B;
+}
+
+li:nth-child(5) {
+    text-decoration: underline;
+}
+
+li:nth-child(6) {
+    text-decoration: underline;
+}

@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-container {
+    background-color: bisque;
+}
+
+header {
+    height: 500px;
+    border: 3px solid black;
+
+    /* setzt die benachbarten Elemente nebeneinander */
+    display: flex;
+    
+    /* default Einstellung */
+    justify-content: flex-start;
+
+    /* verschiebt die Elemnte nach rechts */
+    justify-content: flex-end;
+
+    /* Elemnte werden in die Mitte zentriert */
+    justify-content: center;
+
+    /* erzeugt automatisch einen Abstand zwischen den Elementen */
+    justify-content: space-around;
+
+    /* erzeugt den Abstand zwischen Elementen ohne den Abstand zum Rand */
+    justify-content: space-between;
+
+    /* erzeugt gleichmäßigen Abstand zwischen den Elementen */
+    justify-content: space-evenly;
+
+    /* defauklt Einstellung */
+    align-items: flex-start;
+
+    /* setzt die Elemente in den Elementen am Ende */
+    align-items: flex-end;
+
+    /* setzt die Elemente in den Elementen veritkal mittig */
+    align-items: center;
+
+    /* setzt die ELemente in den Elementen auf die gleiche Höhe */
+    align-items: baseline;
+
+    /* kann die Elemente auch untereinander verschieben lassen */
+    flex-wrap: wrap;
+    
+    /* default Einstellung - Zeilen werden am Anfang des Containers ausgerichtet */
+    align-content: start;
+
+    /* setzt die Elemente zum Ende des Containers */
+    align-content: end;
+
+    /* setzt die Elemente mittig des Containers */
+    align-content: center;
+}
+
+header section {
+    width: 300px;
+}
+
+h2 {
+    background-color: aquamarine;
+    height: 50px;
+}
+
+nav {
+    background-color: orange;
+    height: 30px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.div-section {
+    display: flex;
+    background-color: grey;
+    justify-content: space-evenly;
+}
+
+.flex-element {
+    color: red;
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.flex-element:nth-of-type(1) {order: 2;}
+.flex-element:nth-of-type(2) {order: 1;}
+.flex-element:nth-of-type(3) {order: 5;}
+.flex-element:nth-of-type(4) {order: 3;}
+.flex-element:nth-of-type(5) {order: 4;}
+
+.img-section {
+    display: flex;
+    column-gap: 5rem;
+    justify-content: space-evenly;
+}

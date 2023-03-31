@@ -1,0 +1,50 @@
+@font-face {
+    font-family: alkatra;
+    src: url(./Alkatra-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: alkatra;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    background-image: url(./sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 5%;
+    text-align: center;
+}
+
+article {
+    padding: 1%;
+    background: rgb(255,255,255,0.2);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 3vw, 4rem);
+    text-shadow: 2px 2px 5px;
+    padding: 0 15%;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2.0vw, 3.0rem);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: clamp(1.0rem, 1.4vw, 1.8rem);
+    margin-bottom: 20px;
+}

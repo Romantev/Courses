@@ -1,0 +1,165 @@
+@font-face {
+    font-family: cinzel;
+    src: url(../Cinzel-VariableFont_wght.ttf);
+    font-family: poppins;
+    src: url(../Poppins-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header p {
+    font-family: cinzel;
+    color: #999999;
+    width: 101.09px;
+    height: 25.5px;
+    font-weight: 700px;
+    font-size: 18.72px;
+    line-height: 25.23px;
+    margin-left: 100.8px;
+    margin-top: 12px;
+}
+
+header {
+    width: 1440px;
+    height: 50.5px;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+}
+
+section:nth-child(1) {
+    width: 1440px;
+    height: 577.09px;
+    background-image: url(https://s3-alpha-sig.figma.com/img/e8d5/ac02/3015f19d657c9e7551017974e9863b37?Expires=1680480000&Signature=l5W~pxhqFzsgksxu~8bBiOfxsWSjvghK0oIs4lcKXxrL7WzogNZ7s5R1szVba~-FtB4wOEIS6HAGfWGm7YoW0wEkzOEqTSXH0Xp8tQrvdnnEMwe7upVa2Uy0rUD31Ksouogv2D0CB9Sm~m5YwBuPx2wa~FTslB5OxbBpTLDsnDBTV4qMrNoFv2iRkpx7TYb8HEjE1XlyhLE~nKVl4Q4sf-z-LXrj78tlGvOVk2RMa3dIFp2LJDbwlbHbJxXyf3JuyE8fruMQf8m0jjXlW0AuFDWEEsF7v-QHGuWnLyYqQPdbfDT0svHxjIjCEjSncTZe4vG2IQD0GQIalLvvsOjnMQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+    text-align: center;
+}
+
+h1 {
+    width: 615.06px;
+    height: 67.5px;
+    font-family: cinzel;
+    font-style: bold;
+    font-weight: 700px;
+    color: #FFFFFF;
+    padding-top: 254.8px;
+    padding-left: 421.67px;
+    font-size: 50px;
+}
+
+section:nth-child(2) {
+    width: 1440px;
+    height: 344.33px;
+}
+
+h2:nth-child(1) {
+    width: 230.49px;
+    height: 32.5px;
+    font-family: cinzel;
+    font-size: 24px;
+    line-height: 32.35px;
+    text-align: center;
+    color: #333333;
+    padding-top: 79.91px;
+    padding-left: 607.95px;
+}
+
+section p {
+    font-family: poppins;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 60.41px;
+    padding-left: 158.73px;
+    width: 1122.75px;
+    height: 93.73px;
+}
+
+article {
+    width: 1440px;
+    height: 208.82px;
+    padding-left: 108px;
+    margin-bottom: 86.5px;
+}
+
+img {
+    width: 360px;
+    height: 202.31px;
+    margin-right: 76.27px;
+}
+
+section:nth-child(3) {
+    width: 1440px;
+    height: 316.5px;
+    font-family: poppins;
+    margin-bottom: 132.91px;
+}
+
+h2:nth-child(2) {
+    width: 205.43px;
+    height: 32.5px;
+    margin-left: 622.48px;
+    font-size: 24px;
+    line-height: 32.52px;
+    text-align: center;
+    color: #333333;
+    font-family: cinzel;
+    margin-bottom: 41.7px;
+}
+
+ul {
+    width: 1332px;
+    height: 234px;
+    line-height: 24px;
+    margin-left: 108px;
+    list-style-type: none;
+    padding-top: 50px;
+}
+
+ul li {
+    margin-left: 40px;
+    font-size: 16px;
+    font-family: poppins;
+    display: flex;
+    margin-bottom: 16.5px;
+
+}
+
+div {
+    color: #FF0000;
+}
+
+span {
+    color: #008000;
+}
+
+main {
+    margin-bottom: 132.91px;
+}
+
+footer {
+    width: 1440px;
+    height: 144.05px;
+    border: 1px solid #CCCCCC;
+}
+
+footer p:nth-child(1) {
+    width: 152.3px;
+    height: 32.5px;
+    font-family: cinzel;
+    margin-bottom: 20.91px;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 645.25px;
+    padding-top: 32.91px;
+}
+
+footer p:nth-child(2) {
+    width: 166.14px;
+    height: 26px;
+    font-size: 18.72px;
+    line-height: 28.08px;
+    margin-left: 637.03px;
+    font-family: poppins;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+h1, p, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    border: 5px dotted black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+p:nth-of-type(1) {
+    border: 3px solid red;
+    padding: 10px;
+    color: orange;
+}
+
+p:nth-of-type(2) {
+    border: 3px solid green;
+    padding: 10px;
+    color: aquamarine;
+}
+
+h2 {
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+p:nth-of-type(3) {
+    border: 3px solid yellow;
+    padding: 10px;
+    color: blueviolet;
+}
+
+ol {
+    border: 5px solid black;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    border: 10px double blue;
+    padding: 20px;
+    border-radius: 30px;
+    margin: auto 150px;
+}

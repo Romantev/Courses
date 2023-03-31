@@ -1,0 +1,37 @@
+@font-face {
+    font-family: monserrat;
+    src: url(./Montserrat-VariableFont_wght.ttf);
+}
+
+li:nth-child(3n) {
+    color: #311B92;
+    font-family: monserrat;
+}
+
+li:nth-child(5n) {
+    background-color: #FFF176;
+}
+
+li:nth-child(2n) {
+    text-decoration: underline;
+}
+
+li:nth-child(3n + 1) {
+    list-style: square;
+}
+
+li:nth-child(7n) {
+    font-size: 1.6em;
+}
+
+li:nth-child(1) {
+    color: #E53935;
+}
+
+li:nth-child(4n) {
+    letter-spacing: 6px;
+}
+
+li:nth-child(13n) {
+    background-color: #FF8A80;
+}
