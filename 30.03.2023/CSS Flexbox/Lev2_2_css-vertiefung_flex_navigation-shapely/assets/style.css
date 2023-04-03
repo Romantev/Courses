@@ -18,7 +18,14 @@ header {
     height: 76px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-top: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 150px;
+    align-items: center;
+    height: 50px;
 }
 
 nav a {
@@ -31,6 +38,12 @@ nav a:hover {
     color: #333;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
 ul a {
     color: #333;
     text-decoration: none;
@@ -39,16 +52,4 @@ ul a {
 
 ul a:hover {
     color: #337ab7;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 150px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
 }

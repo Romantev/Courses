@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "raleway";
+    font-family: raleway;
     src: url(./Raleway-VariableFont_wght.ttf);
 }
 
@@ -7,7 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "raleway";
+    font-family: raleway;
 }
 
 html {
@@ -17,6 +17,14 @@ html {
 header {
     height: 76px;
     margin-top: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 30px 0;
 }
 
 nav a {
@@ -29,26 +37,25 @@ nav a:hover {
     color: #333;
 }
 
-ul a {
-    color: #333;
-    text-decoration: none;
-    font-size: clamp(0.5rem, 1vw, 0.8rem);
-}
-
-ul a:hover {
-    color: #337ab7;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 150px;
+nav img {
+    height: 15px;
 }
 
 ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+}
+
+ul a {
+    color: #333;
+    text-decoration: none;
+    font-size: clamp(0.5rem, 1vw, 0.8rem);
+    letter-spacing: -1px;
+}
+
+ul a:hover {
+    color: #337ab7;
 }
 
 section {
