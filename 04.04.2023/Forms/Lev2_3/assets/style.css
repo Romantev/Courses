@@ -1,0 +1,66 @@
+fieldset {
+    width: 50vw;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+form {
+    font-size: 20px;
+}
+
+.name input {
+    margin-left: 200px;
+}
+
+.surname input {
+    margin-left: 177px;
+}
+
+.email input {
+    margin-left: 200px;
+}
+
+.gender {
+    margin: 10px 0;
+}
+
+.gender label:nth-of-type(1) {
+    margin-right: 190px;
+}
+
+.picture {
+    margin: 10px 0;
+}
+
+.picture input {
+    margin-left: 190px;
+}
+
+.country {
+    margin: 10px 0;
+}
+
+.country select {
+    margin-left: 180px;
+}
+
+.lang {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.lang select {
+    margin-left: 80px;
+}
+
+.activity {
+    margin-bottom: 10px;
+}
+
+.activity label:nth-of-type(1) {
+    margin-right: 120px;
+}

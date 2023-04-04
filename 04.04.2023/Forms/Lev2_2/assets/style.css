@@ -1,0 +1,17 @@
+fieldset {
+    width: 35vw;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input[type="submit"] {
+    margin: 5px;
+}

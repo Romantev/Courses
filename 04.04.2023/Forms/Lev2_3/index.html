@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Register form</legend>
+        <form>
+            <section class="name">
+                <label>Name</label>
+                <input id="name" type="text" placeholder="Name"> 
+            </section>
+            
+            <section class="surname">
+                <label>Surname</label>
+                <input id="surname" type="text" placeholder="Surname">   
+            </section>
+            
+
+            <section class="email">
+                <label>Email</label>
+                <input id="email" type="email" placeholder="Email">
+            </section>
+            
+            
+            <section class="gender">
+                <label>Gender</label>
+                <label for="male">Male</label>
+                <input id="male" type="radio" value="male">
+                <label for="female">Female</label>
+                <input id="female" type="radio" value="female">
+            </section>
+
+            
+            <section class="picture">
+                <label>Picture</label>
+                <input id="picture" type="file"> 
+            </section>
+
+            <section class="country">
+                <label>Country</label>
+                <select>
+                    <option>Germany</option>
+	                <option>Spain</option>
+	                <option>France</option>
+	            </select> 
+            </section>
+
+            <section class="lang">
+                <label>Preferred Languages</label>
+                <select multiple="multiple">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+                    <option>React</option>
+                </select>
+            </section>
+
+            <section class="activity">
+                <label>Field of activity</label>
+                <label for="it">IT</label>
+                <input id="it" type="radio" value="it">
+                <label for="design">Design</label>
+                <input id="design" type="radio" value="design">
+                <label for="other">Other</label>
+                <input id="other" type="radio" value="other">
+            </section>
+                
+            <section class="buttons">
+                <input type="submit">
+                <button>Abbrechen</button>
+            </section>    
+        </form>
+    </fieldset>
+</body>
+</html>

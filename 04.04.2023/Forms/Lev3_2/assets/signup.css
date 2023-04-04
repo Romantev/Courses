@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(117, 117, 194);
+    --hover-color: rgb(71, 71, 251);
+    --second-color: white;
+    --background: rgb(30, 30, 30);
+}
+
+main {
+    margin: 30px;
+    padding: 20px 30px;
+    width: 25vw;
+    background-color: var(--background);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--main-color);
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: var(--second-color);
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.login {
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+    width: 50%;
+}
+
+h1 {
+    color: var(--second-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--background);
+    border: 1px solid var(--second-color);
+
+}
+
+div input {
+    display: inline;
+    width: 49.3%;
+}

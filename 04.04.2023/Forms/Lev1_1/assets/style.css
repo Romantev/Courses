@@ -1,0 +1,45 @@
+label {
+    display: block;
+    font-weight: 700;
+}
+
+label:after {
+    content: "*";
+    color: red;
+}
+
+label:nth-of-type(3):after {
+    content: "";
+}
+
+input, textarea {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 250px;
+}
+
+input[type="email"] {
+    width: 512px;
+}
+
+select {
+    width: 520px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-width: 512px;
+    max-width: 512px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+input[type="submit"] {
+    width: 520px;
+    height: 30px;
+    background-color: rgb(109, 192, 192);
+    color: white;
+    display: block;
+}
