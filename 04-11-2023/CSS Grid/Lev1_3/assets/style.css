@@ -1,41 +1,30 @@
-header {
-    height: 15vh;
+div {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    background-color: blue;
-    margin-bottom: 1vh;
-}
-
-h1 {
-    color: white;
-}
-
-main {
-    height: 70vh;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    color: white;
+    grid-template: repeat(4,fr);
     gap: 0.5vw;
-    margin-bottom: 1vh;
+    color: white;
+}
+
+header {
+    height: 10vh;
+    grid-column: 1/5;
+    background-color: blue;
 }
 
 aside {
-    background-color: green;
     grid-column: 1/2;
+    background-color: green;
 }
 
-.main-content {
-    background-color: red;
+main {
+    height: 75vh;
     grid-column: 2/5;
+    background-color: red;
 }
+
 
 footer {
-    height: 15vh;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    height: 10vh;
     background-color: purple;
-}
-
-h3 {
-    color: white;
+    grid-column: 1/5;
 }
