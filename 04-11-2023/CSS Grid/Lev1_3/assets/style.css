@@ -1,0 +1,41 @@
+header {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: blue;
+    margin-bottom: 1vh;
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    gap: 0.5vw;
+    margin-bottom: 1vh;
+}
+
+aside {
+    background-color: green;
+    grid-column: 1/2;
+}
+
+.main-content {
+    background-color: red;
+    grid-column: 2/5;
+}
+
+footer {
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: purple;
+}
+
+h3 {
+    color: white;
+}
