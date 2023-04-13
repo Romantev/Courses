@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    height: 100vh;
+    background-color: #23262B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 50vh;
+    width: 40vw;
+    border: 5px solid white;
+}
+
+section:hover {
+    animation: shadow 3s infinite alternate;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: rgba(133, 2, 255, 0.25) 0px 54px 55px, rgba(133, 2, 255, 0.25) 0px -12px 30px, rgba(133, 2, 255, 0.25) 0px 4px 6px, rgba(133, 2, 255, 0.25) 0px 12px 13px, rgba(133, 2, 255, 0.25) 0px -3px 5px;
+    }
+
+    50% {
+        box-shadow: rgba(13, 255, 0, 0.25) 0px 54px 55px, rgba(13, 255, 0, 0.25) 0px -12px 30px, rgba(13, 255, 0, 0.25) 0px 4px 6px, rgba(13, 255, 0, 0.25) 0px 12px 13px, rgba(13, 255, 0, 0.25) 0px -3px 5px;
+    }
+
+    100% {
+        box-shadow: rgba(0, 179, 255, 0.25) 0px 54px 55px, rgba(0, 179, 255, 0.25) 0px -12px 30px, rgba(0, 179, 255, 0.25) 0px 4px 6px, rgba(0, 179, 255, 0.25) 0px 12px 13px, rgba(0, 179, 255, 0.25) 0px -3px 5px;
+    }
+}

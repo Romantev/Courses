@@ -1,0 +1,26 @@
+section {
+    background-color: #5C3EDE;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    height: 100px;
+    width: 700px;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+div {
+    background-color: red;
+    height: 80%;
+    width: 10%;
+    transition: all 1s ease-in-out;
+}
+
+div:hover {
+    width: 100%;
+}

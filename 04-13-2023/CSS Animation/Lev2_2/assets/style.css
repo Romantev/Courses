@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    background-color: #5C3EDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    padding: 10px;
+    border: 5px solid black;
+    position: relative;
+}
+
+div {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    animation: rotation 4s infinite;
+    position: absolute;
+}
+
+@keyframes rotation {
+    0%, 100% {
+        background-color: red;
+        top: 2%;
+        left: 2%;
+    }
+
+    25% {
+        background-color: yellow;
+        top: 2%;
+        left: 88%;
+    }
+
+    50% {
+        background-color: green;
+        top: 78%;
+        left: 88%;
+    }
+
+    75% {
+        background-color: blue;
+        top: 78%;
+        left: 2%;
+    }
+}

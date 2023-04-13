@@ -1,0 +1,19 @@
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: #E16664;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+div:hover {
+    transform-origin: 0 0;
+    transform: rotateZ(-90deg) scale(0.6);
+}

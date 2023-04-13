@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+main {
+    background-color: #ECECEC;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 60%;
+    width: 60%;
+    background-image: url(./david-marcu-78A265wPiO4-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+section:hover div {
+    top: 0%
+}
+
+h1 {
+    font-size: 50px;
+}
