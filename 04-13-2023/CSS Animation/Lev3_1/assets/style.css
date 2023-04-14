@@ -13,8 +13,8 @@ main {
 }
 
 section {
-    height: 60vh;
-    width: 50vw;
+    height: 400px;
+    width: 700px;
     background-color: white;
     border: 3px solid black;
     position: relative;
@@ -45,27 +45,22 @@ div:nth-of-type(4) {
 }
 
 @keyframes circus {
-    0%, 100% {
+    0% {
         background-color: red;
-        top: 2%;
-        left: 2%;
     }
 
     25% {
         background-color: yellow;
-        top: 2%;
-        left: 88%;
+        transform: translate(620px, 0);
     }
 
     50% {
         background-color: green;
-        top: 80%;
-        left: 88%;
+        transform: translate(620px, 320px);
     }
 
     75% {
         background-color: blue;
-        top: 80%;
-        left: 2%;
+        transform: translate(0, 320px);
     }
 }
