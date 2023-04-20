@@ -1,0 +1,10 @@
+@mixin namedesMixin {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+@mixin textstyle ($fontsize, $color, $background) {
+    font-size: $fontsize;
+    color: $color;
+    background: $background;
+}

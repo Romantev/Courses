@@ -1,0 +1,20 @@
+@mixin balls {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 1rem;
+    position: absolute;
+    left: 1%;
+    animation-name: extreme;
+}
+
+@mixin animation ($dauer, $timing, $funktion, $iritation) {
+    animation-duration: $dauer;
+    animation-delay: $timing;
+    animation-timing-function: $funktion;
+    animation-iteration-count: $iritation;
+}
+
+@mixin colors ($ballcolor) {
+    background-color: $ballcolor;
+}

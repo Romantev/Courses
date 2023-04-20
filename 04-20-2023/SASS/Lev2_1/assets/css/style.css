@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #5af2fd 12.5%, #fcc735 12.5%, #fcc735 25%, #fd5f5f 25%, #fd5f5f 37.5%, #bb4dfa 37.5%, #bb4dfa 50%, #5af2fd 50%, #5af2fd 62.5%, #fcc735 62.5%, #fcc735 75%, #fd5f5f 75%, #fd5f5f 87.5%, #bb4dfa 87.5%, #bb4dfa 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section p {
+  transform: scale(2);
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+section article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section article h1 {
+  font-size: 10rem;
+  color: white;
+}
+section article h2 {
+  font-size: 5rem;
+  color: white;
+}
+section h3 {
+  color: white;
+  background-color: #bb4dfa;
+  font-size: 5rem;
+  padding: 2rem 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 17%;
+  right: 17%;
+}
+section div {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+section div i {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

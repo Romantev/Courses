@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER STYLES */
+header, main {
+  padding: 30px;
+  color: blue;
+}
+
+header {
+  color: blue;
+}
+header h1 {
+  font-size: 5rem;
+}
+header nav {
+  background-color: red;
+}
+header nav a {
+  margin-left: 100px;
+  color: purple;
+}
+header nav a:nth-of-type(2) {
+  color: pink;
+}
+header nav a:nth-of-type(3):hover {
+  color: yellow;
+}
+
+.img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+}
+.img figure img {
+  width: 100%;
+}
+.img figure figcaption {
+  background-color: lightblue;
+}
+.img figure figcaption h2 {
+  font-size: 2rem;
+  color: pink;
+  background: green;
+  font-size: 40px;
+}
+.img figure figcaption h2:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.img figure figcaption p {
+  font-size: 1rem;
+  color: red;
+  background: black;
+}
+
+/*# sourceMappingURL=style.css.map */

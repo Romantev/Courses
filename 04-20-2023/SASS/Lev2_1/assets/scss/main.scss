@@ -1,0 +1,59 @@
+@import "mixin.scss";
+@import "variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background-image: $gradient;
+    @include flexing;
+
+    p {
+        transform: scale(2);
+        position: absolute;
+        top: 2%;
+        left: 2%;
+    }
+
+    article {
+        @include flexing;
+        flex-direction: column;
+
+        h1 {
+            font-size: 10rem;
+            color: $main-color;
+        }
+
+        h2 {
+            font-size: 5rem;
+            color: $main-color;
+        }
+    }
+
+    h3 {
+        color: $main-color;
+        background-color: $fourth-color;
+        font-size: 5rem;
+        padding: 2rem 3rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 17%;
+        right: 17%;
+    }
+
+    div {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        @include flexing;
+        gap: 3rem;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER STYLES */
+
+header, main {
+    padding: $padding30;
+    color: $firstcolor;
+}
+
+header {
+    color: blue;
+    h1 {
+    font-size: 5rem;
+    }
+    nav {
+        background-color: $secondcolor;
+        a {
+            margin-left: 100px;
+            color: purple;
+            &:nth-of-type(2) {
+                color: pink;
+            }
+            &:nth-of-type(3):hover {
+                color: yellow;
+            }
+        }
+    }
+}
+
+// MAIN STYLES 
+
+.img {
+    @include namedesMixin;
+    gap: $gap;
+
+    figure {
+
+        img {
+            width: 100%;
+        }
+        figcaption {
+            background-color: lightblue;
+
+            h2 {
+                @include textstyle(2rem, pink, green);
+                font-size: 40px;
+                &:hover {
+                    color: yellow;
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                @include textstyle(1rem, red, black)
+            }
+        }
+    }
+}
+
+.extend {
+
+    h3 {
+        color: grey;
+        font-size: 4rem;
+    }
+
+    p {
+        @extend h3;
+    }
+}

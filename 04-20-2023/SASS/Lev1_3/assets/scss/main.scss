@@ -1,0 +1,47 @@
+@import "mixin.scss";
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        height: 50vh;
+        width: 70vw;
+        border: 3px solid black;
+        position: relative;
+
+        div {
+            @include balls;
+        }
+
+        .ball1 {
+            top: 1%;
+            @include colors (red);
+            @include animation (1s, 2s, linear, infinite);
+        }
+
+        .ball2 {
+            top: 30%;
+            @include colors (blue);
+            @include animation (3s, 0.5s, ease-in-out, infinite);
+        }
+
+        .ball3 {
+            top: 60%;
+            @include colors (yellow);
+            @include animation (5s, 0s, ease-out, infinite)
+        }
+    }
+}
+
+@keyframes extreme {
+    0% {
+        left: 1%;
+    }
+
+    50% {
+        left: 85%;
+    }
+}
