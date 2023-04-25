@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background: rgb(215, 215, 215);
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px;
+}
+
+h1 {
+    font-size: 10vw;
+    padding: 3vw;
+}
+
+p {
+    font-size: 5vw;
+    padding: 2vw;
+    text-align: center;
+}
