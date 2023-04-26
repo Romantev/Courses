@@ -35,7 +35,20 @@
 // x **= 3;
 // console.log(x);
 
-let firstName = window.prompt("Gebe hier deinen Vornamen ein!");
-let lastName = window.prompt("Und hier deinen Nachnamen!");
+
+// let lastName = window.prompt("Und hier deinen Nachnamen!");
+// let fullName = firstName + " " + lastName;
+// document.getElementById("name").innerText = fullName;
+
+let firstName = prompt("Gebe hier deinen Vornamen ein!");
+    if (firstName != null) {
+        document.getElementById("name").innerText = firstName;
+    }
+
+let lastName = prompt("Gebe hier deinen Vornamen ein!");
+    if (firstName != null) {
+        document.getElementById("name").innerText = lastName;
+    }
+
 let fullName = firstName + " " + lastName;
 document.getElementById("name").innerText = fullName;
