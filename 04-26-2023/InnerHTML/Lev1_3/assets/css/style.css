@@ -22,3 +22,7 @@ section {
     align-items: center;
     gap: 3rem;
 }
+
+p {
+    text-align: center;
+}

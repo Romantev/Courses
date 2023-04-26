@@ -1,3 +1,3 @@
-document.querySelector("#gallery").innerHTML = "<figure><img src='https://source.unsplash.com/featured/300x201'></figure>"
-document.querySelector("#gallery").innerHTML += "<figure><img src='https://source.unsplash.com/featured/300x201'></figure>"
-document.querySelector("#gallery").innerHTML += "<figure><img src='https://source.unsplash.com/featured/300x201'></figure>"
+document.querySelector("#gallery").innerHTML = '<figure><img src="https://source.unsplash.com/featured/300x201"><p>Fig.1</p></figure>';
+document.querySelector("#gallery").innerHTML += '<figure><img src="https://source.unsplash.com/featured/300x201"><p>Fig.2</p></figure>';
+document.querySelector("#gallery").innerHTML += '<figure><img src="https://source.unsplash.com/featured/300x201"><p>Fig.3</p></figure>';
