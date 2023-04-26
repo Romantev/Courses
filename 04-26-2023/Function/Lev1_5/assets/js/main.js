@@ -1,6 +1,8 @@
 function math(zahl1, zahl2) {
-    console.log("Multiplikation: " + zahl1 * zahl2);
-    console.log("Division: " + zahl1 / zahl2);
+    
+    console.log("Multiplikation: ", zahl1 * zahl2);
+    console.log("Division: ", zahl1 / zahl2);
+
 }
 
 math(10, 2)
