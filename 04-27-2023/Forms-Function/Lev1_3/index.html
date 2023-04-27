@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form onsubmit="berechne(); return false">
+          <article>
+            <div>
+              <label for="name1">Name von Person A</label>
+              <input type="text" class="name1" required />
+            </div>
+            <div>
+              <label for="numb1">Alter von Person A</label>
+              <input type="number" class="numb1" required />
+            </div>
+          </article>
+          <article>
+            <div>
+              <label for="name2">Name von Person B</label>
+              <input type="text" class="name2" required />
+            </div>
+            <div>
+              <label for="numb2">Alter von Person B</label>
+              <input type="number" class="numb2" required />
+            </div>
+          </article>
+          <input type="submit" value="Berechne" class="button" />
+        </form>
+        <p class="result"></p>
+      </section>
+    </main>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>
