@@ -1,0 +1,53 @@
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+:root {
+  --var1: ;
+  --var2: ;
+  --var3: ;
+}
+
+/* GLOBAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  height: 100vh;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  text-align: center;
+  height: 2rem;
+}
+
+#submit {
+  font-size: 1.2rem;
+}

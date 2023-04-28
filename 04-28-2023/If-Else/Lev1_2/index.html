@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW TITLE</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form onsubmit="checkWeather(); return false">
+        <label for="weather">Wetter Qualität:</label>
+        <input type="number" id="weather" min="0" max="10" />
+        <input type="submit" value="Check" />
+        <p>Das Wetter ist <span class="result"></span></p>
+      </form>
+    </main>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>

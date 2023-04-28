@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+          <label for="range">AQI: <span class="outputVal"></span></label>
+          <input
+            oninput="changeVal()"
+            type="range"
+            value=""
+            min="0"
+            max="150"
+            id="range"
+          />
+        </div>
+        <p>Level of health concern: <span class="output1"></span></p>
+        <p>Level of health effect: <span class="output2"></span></p>
+      </section>
+    </main>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>
