@@ -32,7 +32,6 @@ multiply = () => {
   let array2 = array.map((numb) => numb * 2);
   console.log(array2);
 };
-
 multiply();
 
 //! ===== Lev1_4 =====
@@ -47,5 +46,4 @@ umrechnen = () => {
   });
   console.log(celsius);
 };
-
 umrechnen();
