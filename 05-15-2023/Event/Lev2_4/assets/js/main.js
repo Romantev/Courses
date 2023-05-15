@@ -6,5 +6,4 @@ btn.addEventListener("click", () => {
   document.body.style.backgroundColor = color.value.replace(" ", "");
   let selectedOption = color.options[color.selectedIndex];
   selectedOption.style.backgroundColor = color.value.replace(" ", "");
-  selectedOption.style.fontSize = "20px";
 });
