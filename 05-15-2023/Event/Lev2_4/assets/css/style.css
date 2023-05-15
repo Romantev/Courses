@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  padding: 5px;
+  display: inline-block;
+  background: #999;
+  border-radius: 5px;
+}
+
+input {
+  background: #333;
+  color: white;
+}
+
+.MediumOrchid {
+  background-color: MediumOrchid;
+}
+.MintCream {
+  background-color: MintCream;
+}
+.DodgerBlue {
+  background-color: DodgerBlue;
+}
+.Goldenrod {
+  background-color: Goldenrod;
+}
+.Wheat {
+  background-color: Wheat;
+}
+.MediumTurquoise {
+  background-color: MediumTurquoise;
+}
+.Moccasin {
+  background-color: Moccasin;
+}
+.FireBrick {
+  background-color: FireBrick;
+}
+.LimeGreen {
+  background-color: LimeGreen;
+}
+.SlateGray {
+  background-color: SlateGray;
+}
