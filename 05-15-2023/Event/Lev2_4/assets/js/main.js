@@ -5,5 +5,5 @@ btn.addEventListener("click", () => {
   event.preventDefault();
   document.body.style.backgroundColor = color.value.replace(" ", "");
   let selectedOption = color.options[color.selectedIndex];
-  selectedOption.style.backgroundColor = color.value.replace(" ", "");
+  selectedOption.style.backgroundColor = color.value.trim();
 });
