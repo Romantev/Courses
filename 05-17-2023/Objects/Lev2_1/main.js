@@ -55,7 +55,7 @@ const createTable = () => {
     Object.keys(edelMetallPreise[0])[1]
   }</th><th>${Object.keys(edelMetallPreise[0])[2]}</th></tr>`;
 
-  for (var i = 0; i < edelMetallPreise.length; i++) {
+  for (let i = 0; i < edelMetallPreise.length; i++) {
     content += `<tr><td>${edelMetallPreise[i].name}</td><td>${edelMetallPreise[i].preiseGramEuro}</td><td>${edelMetallPreise[i].veraenderung}</td></tr>`;
   }
   table.innerHTML = content;
