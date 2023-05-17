@@ -48,8 +48,9 @@ console.log(priceOver50);
 
 const createTable = () => {
   let table = document.createElement("table");
-  let content =
-    "<tr><th>Name</th><th>PreiseGramEuro</th><th>Veränderung</th></tr>";
+  let content = `<tr><th>${Object.keys(edelMetallPreise[0])[0]}</th><th>${
+    Object.keys(edelMetallPreise[0])[1]
+  }</th><th>${Object.keys(edelMetallPreise[0])[2]}</th></tr>`;
 
   for (var i = 0; i < edelMetallPreise.length; i++) {
     content += `<tr><td>${edelMetallPreise[i].name}</td><td>${edelMetallPreise[i].preiseGramEuro}</td><td>${edelMetallPreise[i].veraenderung}</td></tr>`;
