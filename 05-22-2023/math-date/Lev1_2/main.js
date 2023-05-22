@@ -23,40 +23,54 @@ let wochenTag = [
   "Samstag",
 ];
 
-let date1 = new Date();
-console.log({ date1 });
+const actualTime = () => {
+  let dateSeconds = new Date().getSeconds();
+  let dateMinute = new Date().getMinutes();
+  let dateHour = new Date().getHours();
+  let dateDate = new Date().getDate();
+  let dateMonth = monate[new Date().getMonth()];
+  let dateYear = new Date().getFullYear();
+  let dateDisplayDay = wochenTag[new Date().getDay()];
 
-let dateYear = new Date().getFullYear();
-console.log(dateYear);
+  const period = document.querySelector(".period");
 
-let dateMonth = new Date().getMonth();
-console.log(dateMonth);
+  document.querySelector(".today").innerHTML = dateDisplayDay;
+  document.querySelector(".day").innerHTML =
+    dateDate < 10 ? "0" + dateDate : dateDate;
+  document.querySelector(".month").innerHTML = dateMonth;
+  document.querySelector(".year").innerHTML = dateYear;
+  document.querySelector(".second").innerHTML =
+    dateSeconds < 10 ? "0" + dateSeconds : dateSeconds;
+  document.querySelector(".minute").innerHTML =
+    dateMinute < 10 ? "0" + dateMinute : dateMinute;
+  document.querySelector(".hour").innerHTML =
+    dateHour < 10 ? "0" + dateHour : dateHour;
+  setTimeout(actualTime, 1000);
 
-let dateDate = new Date().getDate();
-console.log(dateDate + " Tag");
+  if (dateSeconds == 0) {
+    dateMinute += 1;
+  }
+  if (dateMinute == 0) {
+    dateHour += 1;
+  }
+  if (dateHour == 0) {
+    dateDate += 1;
+    dateDisplayDay = wochenTag[new Date().getDay() + 1];
+  }
 
-let dateHour = new Date().getHours();
-console.log(dateHour + " Stunde");
+  if (dateDate == 1) {
+    dateMonth += monate[new Date().getMonth() + 1];
+  }
 
-let dateMinute = new Date().getMinutes();
-console.log(dateMinute + " Minute");
+  if (dateMonth == "Dezember") {
+    dateYear += 1;
+  }
 
-let dateDay = wochenTag[new Date().getDay()];
-console.log(dateDay);
+  if (dateHour < 12) {
+    period.innerHTML = "AM";
+  } else {
+    period.innerHTML = "PM";
+  }
+};
 
-let dateMonthString = monate[new Date().getMonth()];
-console.log(dateMonthString);
-
-let dateDisplayDay = new Date().toLocaleString("default", { weekday: "short" });
-
-// * andere Methode für das selbe Ergebnis
-// let dateDay = new Date().toLocaleString("default", { weekday: "long" });
-// console.log(dateDay);
-
-// let dateMonthString = new Date().toLocaleString("default", { month: "long" });
-// console.log(dateMonthString);
-
-document.querySelector(".day").innerHTML = dateDisplayDay;
-document.querySelector(".hour").innerHTML = dateHour;
-document.querySelector(".minute").innerHTML = dateMinute;
-document.querySelector(".second").innerHTML = new Date().getSeconds();
+actualTime();
