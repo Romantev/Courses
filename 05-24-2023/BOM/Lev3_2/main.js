@@ -11,6 +11,8 @@ let globalscope = false;
 function startMinCountdown() {
   if (globalscope == false) {
     inputVal = Number(document.querySelector("#minutes").value);
+
+    //* setInterval Function for count down
     countDown = setInterval(() => {
       secVal--;
       if (secVal < 0) {
@@ -20,7 +22,7 @@ function startMinCountdown() {
       let sec = secVal < 10 ? "0" + secVal : secVal;
       outputNumb.innerHTML = `${inputVal}:${sec}`;
 
-      //! Stop Countdown
+      //* Stop Countdown
       if (inputVal === 0 && secVal == 0) {
         clearTimeout(countDown);
       }
