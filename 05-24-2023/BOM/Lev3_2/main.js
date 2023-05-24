@@ -1,9 +1,13 @@
+//! Var
 let outputNumb = document.querySelector("#time");
 let inputVal = Number(document.querySelector("#minutes").value);
 let countDown;
 let secVal = 1;
+
+//! Var for one click function
 let globalscope = false;
 
+//! Start Function
 function startMinCountdown() {
   if (globalscope == false) {
     inputVal = Number(document.querySelector("#minutes").value);
@@ -15,6 +19,8 @@ function startMinCountdown() {
       }
       let sec = secVal < 10 ? "0" + secVal : secVal;
       outputNumb.innerHTML = `${inputVal}:${sec}`;
+
+      //! Stop Countdown
       if (inputVal === 0 && secVal == 0) {
         clearTimeout(countDown);
       }
@@ -23,10 +29,12 @@ function startMinCountdown() {
   }
 }
 
+//! Pause Function
 function pauseMinCountdown() {
   clearTimeout(countDown);
 }
 
+//! Continue Function
 function restartMinCountdown() {
   countDown = setInterval(() => {
     secVal--;
@@ -42,6 +50,7 @@ function restartMinCountdown() {
   }, 1000);
 }
 
+//! Reset Function
 function resetMe() {
   outputNumb.innerHTML = "00:00";
   inputVal = 0;
