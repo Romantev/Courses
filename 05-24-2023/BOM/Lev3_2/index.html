@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="minuteCountdownBereich">
+      <p>Minuten Countdown:</p>
+      <div id="time">00:00</div>
+      <input id="minutes" type="text" placeholder=" Minuten übrig..." />
+      <br />
+      <button onclick="startMinCountdown()">Start Countdown</button>
+      <br />
+      <button onclick="pauseMinCountdown()">Pause Countdown</button>
+      <br />
+      <button onclick="restartMinCountdown()">Continue Countdown</button>
+      <br />
+      <button onclick="resetMe()">Reset</button>
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

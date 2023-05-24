@@ -1,0 +1,25 @@
+body {
+  background-color: #ffad87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.zeit {
+  background-color: #fa877f;
+  width: 100%;
+  margin: 5px;
+  color: #dedef0;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+button {
+  background-color: #fa877f;
+  color: #dedef0;
+  padding: 5px;
+  width: 50px;
+  margin: 5px 25px;
+  border-radius: 5px;
+}
