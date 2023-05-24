@@ -48,6 +48,7 @@ function restartMinCountdown() {
       }
       let sec = secVal < 10 ? "0" + secVal : secVal;
       outputNumb.innerHTML = `${inputVal}:${sec}`;
+
       if (inputVal === 0 && secVal == 0) {
         clearTimeout(countDown);
       }
@@ -62,4 +63,6 @@ function resetMe() {
   inputVal = 0;
   secVal = 1;
   clearTimeout(countDown);
+  startScope = false;
+  continueScope = false;
 }
