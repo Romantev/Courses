@@ -35,6 +35,7 @@ function startMinCountdown() {
 //! Pause Function
 function pauseMinCountdown() {
   clearTimeout(countDown);
+  continueScope = false;
 }
 
 //! Continue Function
