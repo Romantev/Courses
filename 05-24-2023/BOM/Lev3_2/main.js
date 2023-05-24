@@ -5,11 +5,12 @@ let countDown;
 let secVal = 1;
 
 //! Var for one click function
-let globalscope = false;
+let startScope = false;
+let continueScope = false;
 
 //! Start Function
 function startMinCountdown() {
-  if (globalscope == false) {
+  if (startScope == false) {
     inputVal = Number(document.querySelector("#minutes").value);
 
     //* setInterval Function for count down
@@ -26,7 +27,7 @@ function startMinCountdown() {
       if (inputVal === 0 && secVal == 0) {
         clearTimeout(countDown);
       }
-      globalscope = true;
+      startScope = true;
     }, 1000);
   }
 }
@@ -38,18 +39,21 @@ function pauseMinCountdown() {
 
 //! Continue Function
 function restartMinCountdown() {
-  countDown = setInterval(() => {
-    secVal--;
-    if (secVal < 0) {
-      secVal = 59;
-      inputVal--;
-    }
-    let sec = secVal < 10 ? "0" + secVal : secVal;
-    outputNumb.innerHTML = `${inputVal}:${sec}`;
-    if (inputVal === 0 && secVal == 0) {
-      clearTimeout(countDown);
-    }
-  }, 1000);
+  if (continueScope == false) {
+    countDown = setInterval(() => {
+      secVal--;
+      if (secVal < 0) {
+        secVal = 59;
+        inputVal--;
+      }
+      let sec = secVal < 10 ? "0" + secVal : secVal;
+      outputNumb.innerHTML = `${inputVal}:${sec}`;
+      if (inputVal === 0 && secVal == 0) {
+        clearTimeout(countDown);
+      }
+    }, 1000);
+    continueScope = true;
+  }
 }
 
 //! Reset Function
