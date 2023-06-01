@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
