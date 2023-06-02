@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button {
+  font-size: 30px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
