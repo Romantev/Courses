@@ -1,0 +1,28 @@
+header {
+  background: url(../../public/header-background.jpg) no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+main {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20vw;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.link-blog {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2rem;
+}

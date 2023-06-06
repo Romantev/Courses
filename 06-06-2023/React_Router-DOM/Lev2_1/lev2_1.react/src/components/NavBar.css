@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: aqua;
+}
+
+img {
+  width: 60px;
+}
+
+.div-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  color: aqua;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.link {
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.active-link {
+  background: red;
+}

@@ -6,8 +6,12 @@ const CounterSection = () => {
   return (
     <section>
       <h1>Counter {number}</h1>
-      <button onClick={() => setNumber(number + 1)}>+</button>
-      <button onClick={() => setNumber(number - 1)}>-</button>
+      <button onClick={() => setNumber((prevNumber) => prevNumber + 1)}>
+        +
+      </button>
+      <button onClick={() => setNumber((prevNumber) => prevNumber - 1)}>
+        -
+      </button>
       <button onClick={() => setNumber(number - number)}>Reset</button>
     </section>
   );
