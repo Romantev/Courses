@@ -1,17 +1,18 @@
+import "./Details.css";
 import Nav from "../components/Nav";
 import { useParams } from "react-router-dom";
 import Data from "../components/Data";
 
 const Details = () => {
   const params = useParams();
-  const pizza = params.pizza;
+  const burger = params.pizza;
 
   return (
     <>
       <Nav />
       <section>
-        <img src={Data[pizza].img_url} alt={Data[pizza].title} />
-        <h1>{Data[pizza].title}</h1>
+        <img src={Data[burger].img_url} alt={Data[burger].title} />
+        <h1>{Data[burger].title}</h1>
       </section>
     </>
   );
