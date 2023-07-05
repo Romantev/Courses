@@ -1,5 +1,33 @@
 import fs from "node:fs";
 
+if (fs.existsSync("./assets")) {
+  console.log("assets Ordner exisitiert bereits");
+} else {
+  console.log("assets Ordner exisitiert nicht");
+
+  //* ========= erstellt neuen Ordner =========
+  fs.mkdirSync("./assets");
+  console.log("assets Ordner wurde erstellt");
+}
+
+function functionMe(content) {
+  if (fs.existsSync("./assets/text.txt")) {
+    console.log("text.txt Datei exisitiert bereits");
+
+    //* ========= fügt der vorhandenen Datei den neuen Inhalt hinzu =========
+    fs.appendFileSync("./assets/text.txt", `\n${content}`);
+    console.log("text.txt Datei wurde mit dem neuem content bearbeitet");
+  } else {
+    console.log("text.txt Datei exisitiert nicht");
+
+    //* ========= rstellt die neue Datei mit dem Inhalt =========
+    fs.writeFileSync("./assets/text.txt", content);
+    console.log("text.txt Datei wurde mit dem content erstellt");
+  }
+}
+
+functionMe("Neue Zeile");
+
 // async function addText(content) {
 //   try {
 //     //* erstellt neuen Ordner
@@ -37,25 +65,3 @@ import fs from "node:fs";
 
 // const newContent = "Das hier ist die Test-Zeile";
 // addText(newContent);
-
-if (fs.existsSync("./assets")) {
-  console.log("assets Ordner exisitiert bereits");
-} else {
-  console.log("assets Ordner exisitiert nicht");
-  fs.mkdirSync("./assets");
-  console.log("assets Ordner wurde erstellt");
-}
-
-function functionMe(content) {
-  if (fs.existsSync("./assets/text.txt")) {
-    console.log("text.txt Datei exisitiert bereits");
-    fs.appendFileSync("./assets/text.txt", `\n${content}`);
-    console.log("text.txt Datei wurde mit dem neuem content bearbeitet");
-  } else {
-    console.log("text.txt Datei exisitiert nicht");
-    fs.writeFileSync("./assets/text.txt", content);
-    console.log("text.txt Datei wurde mit dem content erstellt");
-  }
-}
-
-functionMe("Neue Zeile");

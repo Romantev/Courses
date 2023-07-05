@@ -1,23 +1,27 @@
-import { log } from "node:console";
 import fs from "node:fs/promises";
 
-//* Lese die Datei "block1.txt" und ändere den Inhalt von dieser
+//* liest die Datei "block1.txt" und ändert den Inhalt von dieser
 const filePath = new URL("./block1.txt", import.meta.url);
 let contents = await fs.readFile(filePath, { encoding: "utf8" });
 contents = "Ich bin ein Webdeveloper";
 
-//* Prüfen ob es den "assets" Ordner existiert,
-//* wenn ja, dann lösche diesen
-//* wenn nein, dann erstelle diesen
 try {
+  //* URL Object
   const projectFolder = new URL("./assets", import.meta.url);
+  //* URl Path
   const projectFolderPath = projectFolder.pathname;
+  console.log("projectFolder: ", projectFolder);
+  console.log("projectFolderPath: ", projectFolderPath);
 
   try {
+    //* prüft ob es den "assets" Ordner existiert
     await fs.access(projectFolderPath);
+
+    //* wenn ja, dann lösche diesen
     await fs.rmdir(projectFolderPath);
     console.log("Der assets-Ordner wurde gelöscht.");
   } catch (err) {
+    //* wenn nein, dann erstelle diesen
     await fs.mkdir(projectFolder, { recursive: true });
     console.log(`Der assets-Ordner wurde erstellt.`);
   }
@@ -25,18 +29,18 @@ try {
   console.error(err.message);
 }
 
-//* Prüfen ob es die "delete.txt" Datei existiert,
-//* wenn ja, dann lösche diese
-//* wenn nein, dann erstelle diese
 try {
   const projectFile = new URL("./delete.txt", import.meta.url);
   const projectFilePath = projectFile.pathname;
 
   try {
+    //* prüft ob es die "delete.txt" Datei existiert,
     await fs.access(projectFilePath);
+    //* wenn ja, dann lösche diese
     await fs.rm(projectFilePath);
     console.log("Die delete.txt Datei wurde gelöscht");
   } catch (err) {
+    //* wenn nein, dann erstelle diese
     await fs.appendFile(projectFilePath, "");
     console.log("Die delete.txt Datei wurde erstellt");
   }
@@ -44,7 +48,7 @@ try {
   console.log(err.message);
 }
 
-//* Erstelle die Datei "Hello.txt" und gib ihr einen beliebigen content
+//* erstellt die Datei "Hello.txt" mit content
 try {
   const projectFileHello = new URL("./Hello.txt", import.meta.url);
   try {
