@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 5rem;
+  background-color: antiquewhite;
+}
+
+nav {
+  display: flex;
+  gap: 3rem;
+}
+
+h1 {
+  text-align: center;
+}
